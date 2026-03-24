@@ -1,0 +1,69 @@
+/* GLOBAL */
+:root {
+    --bgImg: "https://classic.sdss.org/segue/Segue-4135-6-58_60.png";
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.displayNone {
+    display: none;
+}
+
+/* MAIN */
+/* HERO */
+
+.hero {}
+
+.heroTitle {}
+
+.heroText {}
+
+.heroNavList {}
+
+
+/* SECTION 1 */
+.sectionHeader {
+
+}
+
+.section1Article {
+
+}
+
+.imgCredContainer {
+    font-size: 10px;
+}
+
+.section1Text {
+
+}
+
+/* SECTION 2 */
+
+.section2 {
+
+}
+
+.section2Article {
+
+}
+
+
+/* SECTION 3 */
+.section3 {
+
+}
+
+.section3Article {
+
+}
+
+.section3Segment {
+    
+}
