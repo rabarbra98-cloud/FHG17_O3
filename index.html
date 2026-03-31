@@ -28,15 +28,21 @@
         </div>
         <nav>
           <ul class="heroNavList">
-            <li>
-              <img class="medImg" id="navStar" src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/kids/spaceplace/comets/en/kuiper-belt_oort-cloud.en.jpg?w=712&h=716&fit=crop&crop=faces%2Cfocalpoint" alt="naviger artikkel solsystem">
-            </li>
-            <li>
-              <img class="medImg" id="navGalaxy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/astro/universe/internal_resources/332/Milky_Way_illustration-1.jpeg?w=800&h=800&fit=clip&crop=faces%2Cfocalpoint" alt="naviger artikkel galakser">
-            </li>
-            <li>
-              <img class="medImg" id="navWeb" src="https://cdn.mos.cms.futurecdn.net/5mBKPZgrdD6ebdRtV8NEDZ-640-80.jpg.webp" alt="naviger artikkel kosmisk nett">
-            </li>
+            <a href="#sectionStar">
+              <li title="Stjernesystem">
+                <img class="medImg" id="navStar" src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/kids/spaceplace/comets/en/kuiper-belt_oort-cloud.en.jpg?w=712&h=716&fit=crop&crop=faces%2Cfocalpoint" alt="naviger artikkel solsystem">
+              </li>
+            </a>
+            <a href="#sectionGalaxy">
+              <li title="Galakser">
+                <img class="medImg" id="navGalaxy" src="https://assets.science.nasa.gov/dynamicimage/assets/science/astro/universe/internal_resources/332/Milky_Way_illustration-1.jpeg?w=800&h=800&fit=clip&crop=faces%2Cfocalpoint" alt="naviger artikkel galakser">
+              </li>
+            </a>
+            <a href="#sectionWeb">
+              <li title="Kosmisk nett">
+                <img class="medImg" id="navWeb" src="https://cdn.mos.cms.futurecdn.net/5mBKPZgrdD6ebdRtV8NEDZ-640-80.jpg.webp" alt="naviger artikkel kosmisk nett">
+              </li>
+            </a>
           </ul>
         </nav>
       </section>
@@ -46,7 +52,7 @@
         <article class="section1Article flexRow">
           <div class="imgCredContainer">
             <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/cds/kids/spaceplace/comets/en/kuiper-belt_oort-cloud.en.jpg?w=712&h=716&fit=crop&crop=faces%2Cfocalpoint" alt="bilde av solsystemet">
-            <p></p>
+            <p>Credit: NASA, https://science.nasa.gov/solar-system/oort-cloud/</p>
           </div>
           <div class="sectionTextBox">
             <p>De minste strukturene vi finner i verdensrommet er 
@@ -79,9 +85,11 @@
             strukturene deler.</p>
         </div>
         
-        <div class="imgCredContainer">
-          <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/astro/universe/internal_resources/332/Milky_Way_illustration-1.jpeg?w=800&h=800&fit=clip&crop=faces%2Cfocalpoint" alt="kunstnerisk avbilding av melkeveien">
-          <p></p>
+        <div id="galaxyImg" class="imgCredContainer">
+          <img class="lrgImg" src="https://assets.science.nasa.gov/dynamicimage/assets/science/astro/universe/internal_resources/332/Milky_Way_illustration-1.jpeg?w=800&h=800&fit=clip&crop=faces%2Cfocalpoint" alt="kunstnerisk avbilding av melkeveien">
+          <p>Illustrasjon av vår galakse, melkeveien
+            NASA/JPL-Caltech
+            Hentet fra https://science.nasa.gov/universe/galaxies/ 10-03-2026</p>
         </div>
         <article class="section2Article flexRow">
           <div class="sectionTextBox">
@@ -103,12 +111,16 @@
           </div>
           <div class="flexColCentered">
             <div class="imgCredContainer">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Seyfert_Sextet_full.jpg/1280px-Seyfert_Sextet_full.jpg?_=20191015020029" alt="galakseklynge">
-              <p></p>
+              <img class="lrgImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Seyfert_Sextet_full.jpg/1280px-Seyfert_Sextet_full.jpg?_=20191015020029" alt="galakseklynge">
+              <p>Credit: NASA - http://www.hubblesite.org/newscenter/archive/2002
+                /22/image/a, Public Domain, 
+                https://commons.wikimedia.org/w/index.php?curid=3983843</p>
             </div>
             <div class="imgCredContainer">
-              <img src="https://cdn.esahubble.org/archives/images/screen/heic0615a.jpg" alt="kolliderende galakser">
-              <p></p>
+              <img class="lrgImg" src="https://cdn.esahubble.org/archives/images/screen/heic0615a.jpg" alt="kolliderende galakser">
+              <p>Credit: NASA, ESA, and the Hubble Heritage Team (STScI/AURA)-
+                ESA/Hubble Collaboration. Acknowledgement: B. Whitmore 
+                (Space Telescope Science Institute) and James Long (ESA/Hubble).</p>
             </div>
           </div>
         </article>
@@ -117,14 +129,16 @@
       <section id="sectionWeb" class="articleBackground flexColCentered displayNone | section3">
         <h2 class="sectionHeader sectionTextBox">Strukturer på den største skala</h2>
         <article class="section3Article flexColCentered">
-          <div class="flexRow">
+          <div id="section3Row" class="flexRow">
             <div class="section3Segment flexColCentered">
               <h3 class="sectionTextBox">Filament</h3>
               <div class="imgCredContainer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Large-scale_structure_of_light_distribution_in_the_universe.jpg/1280px-Large-scale_structure_of_light_distribution_in_the_universe.jpg?_=20140827092335" alt="bilde av trådaktige filamenter">
-                <p></p>
+                <img class="lrgImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Large-scale_structure_of_light_distribution_in_the_universe.jpg/1280px-Large-scale_structure_of_light_distribution_in_the_universe.jpg?_=20140827092335" alt="bilde av trådaktige filamenter">
+                <p>Credit: Andrew Pontzen og Fabio Governato - Andrew Pontzen og Hiranya Peiris, Illuminating illumination: 
+                  what lights up the universe?, UCLA press release, 27 August 2014. flickr.com (high resolution version), 
+                  CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=34973360</p>
               </div>
-              <div class="sectionTextBox">
+              <div class="section3Text">
                 <p>Vi har snakket mye om alt det vakre som glitrer og skinner. 
                   Stjerner og galakser er absolutt vidunderlig å se, men det 
                   meste av universets masse kommer ikke fra stjerner eller 
@@ -145,8 +159,10 @@
             <div class="section3Segment flexColCentered">
               <h3 class="sectionTextBox">Tomrom</h3>
               <div class="imgCredContainer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_superclusters_and_galaxy_voids.png/1280px-Galaxy_superclusters_and_galaxy_voids.png?_=20200410030017" alt="bilde av universets struktur med tomrom utpekt">
-                <p></p>
+                <img class="lrgImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_superclusters_and_galaxy_voids.png/1280px-Galaxy_superclusters_and_galaxy_voids.png?_=20200410030017" alt="bilde av universets struktur med tomrom utpekt">
+                <p>Credit: Opprinnelig bilde fra Azcolvin429, cropped av Zeryphex, forbedret av Astronom5109 - 
+                  Denne filen var hentet fra: 7 Local Superclusters.png, CC BY-SA 3.0, 
+                  https://commons.wikimedia.org/w/index.php?curid=58212354</p>
               </div>
               <div class="section3Text">
                 <p>De største strukturene i universet er tomrom. Det virker 
@@ -167,11 +183,11 @@
           </div>
           <div class="section3Segment flexColCentered">
             <h3 class="sectionTextBox">Det kosmiske nettet</h3>
-            <div class="imgCredContainer lrgImg">
+            <div id="webImg" class="imgCredContainer">
               <img class="lrgImg" src="https://cdn.mos.cms.futurecdn.net/5mBKPZgrdD6ebdRtV8NEDZ-640-80.jpg.webp" alt="bilde av en simulering som viser svampaktig struktur av universet">
-              <p></p>
+              <p>Credit: Millennium Silumation Project</p>
             </div>
-            <div class="sectionTextBox">
+            <div class="section3Text">
               <p>Disse filamentene og tomrommene utgjør sammen en svamp-aktig 
                 struktur som kalles det kosmiske nettet. Dette er hvor vi 
                 forventer at en av de mest grunnleggende ideene innen 
@@ -192,6 +208,9 @@
 
     </main>
     <footer>
+      <p>Laget av: AL</p>
+      <hr>
+      <p>Background credit: Robert Lupton og Sloan Digital Sky Survey Consortium</p>
     </footer>
   </body>
 </html>

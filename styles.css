@@ -6,6 +6,8 @@
     --sectionBoxColour: #88888888;
     --sectionTextBoxColour: #0D0D0DD1;
     --footerColour: #888888;
+
+    --defaultFontFamily: "Roboto";
 }
 
 html {
@@ -15,7 +17,8 @@ html {
 body {
     font-size: 2rem;
     background-image: url("bg_img.jpg");
-
+    margin: 0;
+    font-family: var(--defaultFontFamily);
 }
 
 
@@ -42,8 +45,8 @@ img {
 }
 
 .medImg {
-    width: 25rem;
-    height: 25rem;
+    width: 20vw;
+    height: 20vw;
 }
 
 .lrgImg {
@@ -69,14 +72,15 @@ img {
 
 .imgCredContainer {
     font-size: 10px;
-    max-width: 50vW;
+    max-width: 25vw;
+    background-color: var(--heroBoxColour);
 }
 
 /* MAIN */
 /* HERO */
 
 .hero {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .heroTitle {
@@ -97,7 +101,9 @@ img {
     gap: 10vw;
     padding: 0;
     margin: 0;
+    justify-content: space-around;
     list-style: none;
+    width: 90vw;
 }
 
 .selectedArt {
@@ -117,7 +123,7 @@ img {
 
 
 .section1Article {
-
+    /* display: grid; */
 }
 
 
@@ -134,10 +140,16 @@ img {
 
 }
 
-.section2Article {
 
+.section2Article {
+    /* display: grid; */
+    justify-items: center;
+    gap: 10vh;
 }
 
+#galaxyImg {
+    max-width: 30vw;
+}
 
 /* SECTION 3 */
 .section3 {
@@ -145,6 +157,7 @@ img {
 }
 
 .section3Article {
+    display: grid;
     justify-content: center;
 }
 
@@ -160,8 +173,74 @@ img {
     margin:0;
 }
 
+#webImg {
+    max-width: 50vw;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--footerColour);
     color: var(--darkColour);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+@media (max-width: 426px) {
+
+    /* global */
+    .medImg {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .imgCredContainer {
+        max-width: 30rem;
+    }
+
+    .sectionTextBox {
+        max-width: 100%;
+    }
+
+    /* BODY */
+    body {
+        font-size: 16px;
+    }
+
+    /* HERO */
+    .heroNavList {
+        gap: 5vw;
+        width: 100vw;
+    }
+
+    /* SECTION 1 */
+    .section1Article {
+        display: grid;
+        flex-direction: column;
+        justify-items: center;
+        gap: 10vh;
+    }
+
+    /* SECTION 2 */
+    .section2Article {
+        display: grid;
+    }
+    #galaxyImg {
+        max-width: 80vw;
+    }
+
+    /* SECTION 3 */
+    #section3Row {
+        flex-direction: column;
+        gap: 10vh;
+    }
+
+    .section3Text {
+        max-width: 100%;
+    }
+
+    #webImg {
+        max-width: 100vw;
+    }
 }
